@@ -1,0 +1,107 @@
+body{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: hsla(126, 13%, 85%, 0.802);
+    background-image: url(assets/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+}
+.stopwatch{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background-color: hsla(60, 5%, 13%, 0.872);
+    border:none;
+    border-radius: 100px;
+    shape-outside: circle(50%);
+    padding:30px;
+    margin-top:100px;
+}
+.watch{
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    color:white;
+    text-shadow:2px 2px 2px hsla(0, 0%, 0%, 0.75);
+    margin-bottom:25px;
+}
+.time-controls button{
+    font-size: 1.5rem;
+    font-weight:bold;
+    padding:10px 20px;
+    margin:5px;
+    min-width:125px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    color:white;
+    transition: backgroung-color 0.5s ease;
+
+}
+.start-button{
+    background-color: hsla(60, 94%, 43%, 0.695);
+}
+.start-button:hover{
+    background-color: black;
+    border:1px solid white
+}
+.pause-button{
+    background-color: hsla(10, 90%, 50%, 0.872);
+}
+.pause-button:hover{
+    background-color: black;
+    border:1px solid white
+}
+.reset-button{
+    background-color:  hsla(205, 100%, 77%, 0.688);
+}
+.reset-button:hover{
+    background-color: black;
+    border:1px solid white
+}
+.lap {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.lap button{
+    font-size:30px;
+    font-weight:bold;
+    padding:10px 20px;
+    margin-top:50px;
+    width:150px;
+    border:none;
+    border-radius: 10px;
+    cursor: pointer;
+    color:gray;
+    background-color: hsla(10, 77%, 12%, 0.872);
+    transition: backgroung-color 0.5s ease;
+}
+
+.lap button:hover{
+    background-color: black;
+    border:2px solid white
+}
+
+.lap .lap-display{
+    display:flex;
+    justify-content: space-between;
+    font-family: monospace;
+    margin-top:20px;
+    font-size:30px;
+    color:darkgray;
+
+
+}
+
+.lap .lap-display .contents{
+    background-color:transparent ;
+    margin-left: 50px;
+
+}
